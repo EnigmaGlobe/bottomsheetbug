@@ -13,6 +13,7 @@ import {
   ScrollView,
   StatusBar,
   StyleSheet,
+  TouchableOpacity,
   Text,
   Button,
   useColorScheme,
@@ -43,7 +44,10 @@ const App: () => Node = () => {
          >
            <View style={styles.contentContainer}>
              <Text>Awesome 🎉</Text>
-             <Button title="Press to test" onPress={()=>console.log("Console press to test")} />
+
+             <TouchableOpacity onPress={()=>console.log("test on press text")}><Text>Test on press</Text></TouchableOpacity>
+
+             <Button title="Press to test" onPress={()=>console.log("button press to test")} />
            </View>
          </BottomSheet>
         </View>
